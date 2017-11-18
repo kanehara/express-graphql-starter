@@ -4,6 +4,7 @@
   "description": "Server for the spotimix app",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,7 +19,8 @@
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.7",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "winston": "^2.4.0"
   },
   "devDependencies": {
     "eslint": "^4.11.0",

@@ -10,7 +10,9 @@ const MyType = new GraphQLObjectType({
   name: 'MyType',
   description: '...',
   fields: () => ({
-    // ... fields
+    id: {
+      type: GraphQLInt
+    }
   })
 })
 
@@ -25,7 +27,7 @@ module.exports = new GraphQLSchema({
         args: {
           id: { type: GraphQLInt }
         },
-        resolve: (root, args, context) => {}
+        resolve: (root, args, context) => ({})
       }
     })
   })

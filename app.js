@@ -13,4 +13,6 @@ app.use('/graphql', graphqlHTTP(req => {
   }
 }))
 
+app.get('/healthz', (req, res) => res.send('Oooh weee look at me!'))
+
 module.exports = app
